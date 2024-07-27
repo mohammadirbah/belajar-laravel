@@ -207,6 +207,7 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid text-dark">
+                    @include('flashmessage')
                     @yield('main')
                 </div>
                 <!-- /.container-fluid -->
@@ -270,6 +271,7 @@
         </div>
     </div>
 
+    @yield('js')
     <!-- Bootstrap core JavaScript-->
     <script src="{{ asset('sb/vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('sb/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
